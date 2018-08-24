@@ -1,0 +1,210 @@
+@charset "UTF-8";
+/* Parts.Css
+--機能や装飾の塊--
+今回のプロジェクト用のクラス
+---------------------------------------------------- */
+
+/*汎用個別クラスについて
+各ページ毎に機能が変わるクラス
+既存クラスで対応出来ない物のネーミング時間短縮の為に使用
+.iTxt1, .iBox1, .iFst, .iLst, .No2など
+その場その場でクラスを作って対応する
+｢i｣は｢indivisual｣の頭文字
+.No2などは既存クラスのコードが複数出てきた時などに使用
+------------------------------------------------------*/
+
+/*テキスト色
+.txRed1{color:#F84644;}
+*/
+
+/*背景色
+.bgGrey1{background-color:#999;}
+*/
+
+/*ボーダー
+.bdRed1{border:1px solid #F84644;}
+.bdcRed1{border-color:#F84644;}
+*/
+
+/*ライン
+.line{
+	height: 1px;
+	margin:10px 0;
+	border: none;
+}
+*/
+
+
+/*タイトル
+.ttl1{
+	margin:-8px 0 30px;
+	padding:8px 0 8px 18px;
+	font-size:18px;
+	font-weight:bold;
+	border-bottom:3px solid #ddd;
+	position:relative;
+}
+*/
+
+/*ボタン
+.btn1{
+	display:block;
+	background-color:#ddd;
+	padding:8px 10px;
+	color:#333 !important;
+	font-weight:bold;
+	border:1px solid #ccc;
+	border-radius:5px;
+	position:relative;
+	cursor:pointer;
+}
+.btn1:hover{
+	text-decoration:none;
+	opacity:0.8;
+}
+*/
+
+/*ラベル
+.lbl1{
+	background:url(../img/arw_lbl1.png) left top no-repeat;
+	width:260px;
+	height:31px;
+	padding:8px 10px;
+	color:#fff;
+	font-weight:bold;
+	box-sizing:border-box;
+}
+*/
+
+
+/*ボックス
+.box1{
+	padding:15px;
+	border:1px solid #ddd;
+}
+*/
+
+/*リスト
+.list1{}
+
+.liDcml1 li{
+	padding-left:1em;
+	position:relative;
+	counter-increment:dcml1;
+}
+.liDcml1 li:before{
+	content:counter(dcml1)".";
+	position:absolute;
+	left:0;
+}
+.liDcml2 li{
+	padding-left:2em;
+	position:relative;
+	counter-increment:dcml2;
+}
+.liDcml2 li:before{
+	content:"※"counter(dcml2);
+	position:absolute;
+	left:0;
+}
+.liDisc1 li{
+	padding-left:1.3em;
+	position:relative;
+}
+.liDisc1 li:before{
+	content:"●";
+	display:block;
+	color:#FF5119;
+	position:absolute;
+	left:0;
+}
+
+.liDot1 li{
+	padding-left:1em;
+	position:relative;
+}
+.liDot1 li:before{
+	content:"・";
+	display:block;
+	position:absolute;
+	left:0;
+}
+.liTi1em li{
+	padding-left:1em;
+	text-indent:-1em;
+}
+*/
+
+/*アイコン*/
+/*吹出*/
+.icnBln{/*右:一文字
+	display:inline-block;
+	width:20px;
+	margin-right:20px;
+	color:#fff;
+	font-style:normal;
+	font-size:14px;
+	font-weight:bold;
+	text-align:center;
+	line-height:21px;
+	border-radius:3px;
+	position:relative;
+}
+.icnBln:after{
+	content:"";
+	width:0;
+	height:0;
+	margin:auto;
+	border-style:solid;
+	border-width:4px 0 4px 4px;
+	border-top-color:transparent !important;
+	border-bottom-color:transparent !important;
+	border-right-color:transparent !important;
+	font-size:0;
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:-4px;
+*/
+}
+.blnTx{/*右:テキスト
+	width:auto;
+	height:auto;
+	padding:9px 18px;
+	margin-right:33px;
+	font-style:normal;
+	font-size:14px;
+	line-height:1.2;
+	border-radius:0px;
+	box-sizing:border-box;
+*/
+}
+.bln1{/*background-color:#f84644オレンジ;*/}
+/*.bln1:after{border-color:#f84644;}*/
+
+/*矢印*/
+.arwB1{/*下
+	display:inline-block;
+	border-style:solid;
+	border-width:20px 13px 0;
+	border-bottom-color:transparent;
+	border-left-color:transparent;
+	border-right-color:transparent;
+*/
+}
+
+/*etc*/
+
+
+/*=== メディアクエリ ===*/
+@media screen and (max-width:1199px){
+/*デスクトップ(992px以上、1200px未満)*/
+}
+@media screen and (max-width:991px){
+/*タブレット(768px以上、992px未満)*/
+}
+@media screen and (max-width:767px){
+/*モバイル(768px未満)*/
+}
+
+

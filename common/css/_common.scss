@@ -1,0 +1,329 @@
+@charset "UTF-8";
+
+@import "mq";
+@import "var";
+
+/*--------------------------------------
+ 要素
+---------------------------------------*/
+img{
+	max-width: 100%;
+	height: auto;
+}
+input[type="text"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+textarea{
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	background: none;
+	border: none;
+}
+
+
+/*--------------------------------------
+ パーツ
+---------------------------------------*/
+.u-{
+	/* インナー */
+	$innerW: 1095;
+	&inner{
+		max-width: px($innerW);
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+		&.sz2{
+			max-width: 1000px;
+		}
+		&.sz3{
+			max-width: 800px;
+		}
+		@include mq{
+			padding-left: (15/320) * $per;
+			padding-right: (15/320) * $per;
+		}
+	}
+
+
+	/* タイトル */
+	&ttlBox1{
+		margin-bottom: 45px;
+		font-size: 2.5rem;
+		line-height: 1;
+		text-align: center;
+		.ttl{
+
+		}
+		p{
+			margin-top: 1em;
+			font-size: 0&5em;
+		}
+		@include mq{
+		}
+		&.color1{color: $orange1;}
+	}
+
+
+
+	/* テキスト */
+	&lead1{
+		margin-bottom: 50px;
+		font-size: 1.6rem;
+	}
+
+
+	/* テキスト色 */
+	&txRed{
+		color: red;
+	}
+
+
+	/* 背景色 */
+	&bgGrey1{
+		background-color: #f0f0f0;
+	}
+	&bgMainColor{
+	}
+
+
+	/* ボタン */
+	&btn{
+		display: inline-block;
+		background-color: #FFF;
+		padding: 10px 17px;
+		border: 1px solid #CCC;
+		color: #333;
+		box-shadow: 0 3px 0 #CCC;
+		border-radius: 4px;
+		box-sizing: border-box;
+		@include hvr;
+		&.withIcn{//アイコン付き
+			display: flex;
+			align-items: center;
+		}
+		&.clr{//色
+			&2{
+				background-color: #499745;
+				color: #fff;
+				border: none;
+				box-shadow: none;
+			}
+			&3{
+				background-color: #aaa;
+				color: #fff;
+				border: none;
+				box-shadow: none;
+			}
+		}
+		&.sz{//サイズ
+			&2{
+				padding: 1em;
+				font-size: 2.1rem;
+				@include mq{
+					font-size: 1.6rem;
+				}
+			}
+			&3{
+				padding: 1em 3em;
+				font-size: 1.8rem;
+				@include mq{
+					font-size: 1.6rem;
+				}
+			}
+		}
+		&.withArw{//矢印付き
+			&R{//右
+				padding-right: 2em;
+				padding-left: 2em;
+				position: relative;
+				&:after{
+					content: "";
+					display: inline-block;
+					width: 0.6em;
+					height: 0.6em;
+					margin: auto;
+					border-style: solid;
+					border-width: 1px 1px 0 0;
+					border-color: #fff inherit transparent transparent;
+					box-sizing: border-box;
+					transform: rotate(45deg);
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 1em;
+				}
+			}
+			@include mq{
+				&R{//右
+					display: block;
+					&:after{
+						right: 1em;
+					}
+				}
+			}
+		}
+	}
+
+
+	/* ラベル */
+	&lbl{
+	}
+
+
+	/* アイコン */
+	&icnMail{
+		@include icn("\f0e0");
+	}
+
+
+	/* 注釈 */
+	&note1{
+		display: block;
+		text-indent: -1em;
+		padding-left: 1em;
+	}
+
+
+	/* リスト */
+	&thumTxtList1{
+		display: flex;
+		justify-content: space-between;
+		> a{
+			width: percentage(351/$innerW);
+			.img{
+				overflow: hidden;
+				img{
+					width: 100%;
+					transition: transform 0.3s;
+				}
+			}
+			.ttl{
+				font-size: 1.6rem;
+			}
+			.infos{
+				display: flex;
+				.day{
+
+				}
+				.lbls{
+					display: flex;
+				}
+			}
+			&:hover{
+				.img{
+					img{
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+
+
+
+	/* テーブル */
+	&tblBox1{
+	}
+
+
+	/* リンク集 */
+	&links1{
+	}
+
+
+	/* 箱 */
+	&accBox{//アコーディオン
+	}
+	&accBtn{
+		cursor: pointer;
+	}
+	&accCont{
+	}
+
+
+	/* 状態 */
+	&dis_flex_block{//pcではflex、spではblock
+		display: flex;
+		@include mq{
+			display: block;
+		}
+	}
+
+}
+
+
+/* 状態 */
+.mainSld{
+	margin-bottom: 60px;
+	.liItem{
+		a{
+			display: block;
+			img{
+				width: 100%;
+			}
+		}
+	}
+}
+
+
+/*--------------------------------------
+ プラグイン
+---------------------------------------*/
+/* Slick */
+.slick-slider{margin-bottom: 0;}
+.slick-dots li{
+	background-color: #8c8c8c;
+	width: 15px;
+	height: 15px;
+	margin: 0 7.5px;
+	border-radius: 50%;
+	&.slick-active{
+		background-color: #4b972b;
+	}
+	@include mq{
+		width: (15/640) * 100vw;
+		height: (15/640) * 100vw;
+		margin: 0 (7.5/640) * 100vw;
+	}
+}
+
+
+.modalBox{
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.9);
+    .modalInner{
+        width: 600px;
+        position: absolute;
+        left: 50%;
+        margin-left: -300px;
+        top: 20%;
+        text-align: center;
+        @include mq{
+            width: 90%;
+        }
+        p{
+            text-align: left;
+            padding: 20px 0;
+            font-size: 1.5rem;
+            
+        }
+    }
+    
+    .btnClose{
+        display: inline-block;
+        font-size: 1.5rem;
+        background: #333;
+        padding: 5px;
+        color: #FFF;
+        
+    }
+}

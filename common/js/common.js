@@ -17,20 +17,21 @@ $("img.ovr").mouseover(function(){
 });
 
 $(".mainSld ul").slick({
-  dots: false,
+	arrows: true,
+  dots: true,
   infinite: true,
   speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 641,
+      breakpoint: 769,
       settings: {
+				arrows: true,
+        dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        infinite: true,
-        dots: true,
-				arrows:false
+        infinite: true
       }
     }
   ]

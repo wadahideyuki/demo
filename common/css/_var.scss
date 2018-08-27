@@ -17,10 +17,10 @@ $rem:100rem;
 	@return $suji * $px1;
 }
 @function em($suji) {
-	@return $suji * $em;
+	@return $suji * $em1;
 }
 @function vw($suji) {
-	@return $suji * $vw;
+	@return ($suji/375) * $vw;
 }
 
 

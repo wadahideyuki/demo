@@ -2,6 +2,7 @@
 /* リセット
 ---------------------------------------------------- */
 @import "mq";
+@import "var";
 
 //@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 //@import url(https://fonts.googleapis.com/earlyaccess/sawarabimincho.css);
@@ -78,7 +79,7 @@ html{
 	font-size: 10px;
 	letter-spacing: 0.05em;
 	@include mq{
-		font-size: 3.125vw;
+		font-size: vw(10);
 	}
 }
 

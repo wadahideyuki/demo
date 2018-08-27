@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import "mq";
+@import "var";
+
+/*--------------------------------------
+ フッター
+---------------------------------------*/
+.footer{
+	.ftNavs{
+		background-color: #F2F2F2;
+		padding: 75px 0 55px;
+		@include mq{
+			padding: vw(30) 0 vw(20);
+		}
+		.u-inner{
+			max-width: 790px;
+			@include mq{
+				padding-left: vw(50);
+			}
+		}
+		nav{
+			display: flex;
+			flex-wrap: wrap;
+			@include mq{
+				flex-direction: column;
+			}
+			a{
+				display: inline-block;
+				width: 20%;
+				margin-bottom: 24px;
+				padding: 0 10px 0 30px;
+				color: #4F4F4F;
+				font-size: 1.5rem;
+				position: relative;
+				box-sizing: border-box;
+				@include hvr;
+				&:last-child{width: auto;}
+				&:before{
+					content: "";
+					display: block;
+					width: 0.6em;
+					height: 0.6em;
+					margin: auto;
+					border-right: 3px solid #4F4F4F;
+					border-bottom: 3px solid #4F4F4F;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					transform: translateY(-0.1em) rotate(-45deg);
+				}
+				@include mq{
+					width: auto;
+					margin-bottom: vw(18);
+					padding: 0 0 0 vw(30);
+					font-size: 1.1rem;
+				}
+			}
+		}
+	}
+	.ftInfo{
+		background-color: $purple1;
+		margin-top: 0;
+		padding: 44px 12px 29px;
+		color: #fff;
+		line-height: 1;
+		@include mq{
+			padding: vw(40) vw(12) vw(10);
+		}
+		.ftLogo{
+			width: 192px;
+			margin: auto;
+			@include mq{
+				width: vw(192);
+			}
+		}
+		.copyright{
+			margin-top: -10px;
+			font-size: 1.8rem;
+			text-align: right;
+			@include mq{
+				margin-top: vw(27);
+				font-size: 0.9rem;
+				text-align: center;
+			}
+		}
+	}
+}

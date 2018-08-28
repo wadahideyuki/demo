@@ -299,17 +299,26 @@ section{
 			.infos{
 				display: flex;
 				justify-content: space-between;
-				margin-bottom: 15px;
+				flex-wrap: wrap;
+				margin-bottom: 10px;
 				@include mq{
-					margin-bottom: vw(15);
+					margin-bottom: vw(10);
 				}
 				.day{
+					margin-bottom: 5px;
 					color: #4F4F4F;
 					font-size: 2.4rem;
 					line-height: (28/24);
+					@include mq{
+						margin-bottom: vw(5);
+					}
 				}
 				.lbls{
 					display: flex;
+					margin-bottom: 5px;
+					@include mq{
+						margin-bottom: vw(5);
+					}
 					.u-lbl{
 						+ .u-lbl{
 							margin-left: 11.12px;

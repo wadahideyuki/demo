@@ -5,18 +5,18 @@
 .footer .ftNavs {
   background-color: #F2F2F2;
   padding: 75px 0 55px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .footer .ftNavs {
       padding: 8vw 0 5.3333333333vw; } }
   .footer .ftNavs .u-inner {
     max-width: 790px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .footer .ftNavs .u-inner {
         padding-left: 13.3333333333vw; } }
   .footer .ftNavs nav {
     display: flex;
     flex-wrap: wrap; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .footer .ftNavs nav {
         flex-direction: column; } }
     .footer .ftNavs nav a {
@@ -47,7 +47,7 @@
         bottom: 0;
         left: 0;
         transform: translateY(-0.1em) rotate(-45deg); }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .footer .ftNavs nav a {
           width: auto;
           margin-bottom: 4.8vw;
@@ -59,20 +59,20 @@
   padding: 44px 12px 29px;
   color: #fff;
   line-height: 1; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .footer .ftInfo {
       padding: 10.6666666667vw 3.2vw 2.6666666667vw; } }
   .footer .ftInfo .ftLogo {
     width: 192px;
     margin: auto; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .footer .ftInfo .ftLogo {
         width: 51.2vw; } }
   .footer .ftInfo .copyright {
     margin-top: -10px;
     font-size: 1.8rem;
     text-align: right; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .footer .ftInfo .copyright {
         margin-top: 7.2vw;
         font-size: 0.9rem;

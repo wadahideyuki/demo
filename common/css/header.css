@@ -4,20 +4,21 @@
 ---------------------------------------*/
 .header {
   padding: 65px 0 40px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .header {
       padding: 32px 0 22px; } }
   .header .u-inner {
     display: flex;
     justify-content: space-between;
     max-width: 1368px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .header .u-inner {
         padding-left: 25px;
         padding-right: 25px; } }
     .header .u-inner .hdLogo {
-      width: 280px; }
-      @media screen and (max-width: 768px) {
+      width: 280px;
+      max-width: 20.4678362573%; }
+      @media screen and (max-width: 767px) {
         .header .u-inner .hdLogo {
           width: 200px; } }
       .header .u-inner .hdLogo a {
@@ -31,7 +32,7 @@
       justify-content: space-between;
       flex-direction: row-reverse;
       width: 74.7807017544%; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .header .u-inner .hdMenus {
           display: none; } }
       .header .u-inner .hdMenus .etc {
@@ -112,23 +113,19 @@
                 top: 0;
                 bottom: 0;
                 left: 13px; }
-                .header .u-inner .hdMenus .etc .btns .lng .btn i:before, .header .u-inner .hdMenus .etc .btns .lng .btn i:after {
+                .header .u-inner .hdMenus .etc .btns .lng .btn i:before {
                   content: "";
                   display: block;
-                  background-color: #DD7373;
-                  width: 100%;
-                  height: 1px;
-                  position: absolute; }
-                .header .u-inner .hdMenus .etc .btns .lng .btn i:before {
-                  bottom: 0;
-                  transform: rotate(-45deg); }
-                .header .u-inner .hdMenus .etc .btns .lng .btn i:after {
-                  top: 0;
-                  transform: rotate(45deg); }
+                  width: 70%;
+                  height: 70%;
+                  border-bottom: 2px solid #DD7373;
+                  border-left: 2px solid #DD7373;
+                  transform: translateY(-2px) rotate(-45deg); }
             .header .u-inner .hdMenus .etc .btns .lng .lngs {
               position: relative;
               z-index: 1; }
               .header .u-inner .hdMenus .etc .btns .lng .lngs span {
+                display: none;
                 background-color: #fff;
                 width: 100%;
                 padding: 19px 0 16px;
@@ -191,7 +188,7 @@
               font-size: 15.5px; }
     .header .u-inner .btnSpMenuCls {
       display: none; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .header .u-inner .btnSpMenuCls {
           display: block;
           width: 31px;

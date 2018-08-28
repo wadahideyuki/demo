@@ -61,7 +61,7 @@ html {
   color: #000;
   font-size: 10px;
   letter-spacing: 0.05em; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     html {
       font-size: 2.6666666667vw; } }
 
@@ -69,7 +69,7 @@ body {
   margin: 0;
   padding: 0;
   font: 10px/1.4 "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif"; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     body {
       -webkit-text-size-adjust: 100%; } }
 
@@ -527,7 +527,7 @@ textarea {
 
 article {
   padding-bottom: 100px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     article {
       padding-bottom: 18.6666666667vw; } }
 
@@ -537,7 +537,7 @@ section + section {
     margin-top: 40px; }
   section + section.sec2 {
     margin-top: 80px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     section + section {
       margin-top: 18.6666666667vw; }
       section + section.spSec1 {
@@ -564,7 +564,7 @@ section + section {
   /* リンク集 */
   /* 箱 */
   /* 状態 */ }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .u-spPd1 {
       padding-left: 3.2vw;
       padding-right: 3.2vw; } }
@@ -578,7 +578,7 @@ section + section {
       max-width: 1000px; }
     .u-inner.sz3 {
       max-width: 800px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .u-inner {
         padding-left: 3.2vw;
         padding-right: 3.2vw; }
@@ -595,7 +595,7 @@ section + section {
     .u-ttlBox1 p {
       margin-top: 25px;
       font-size: 1.6rem; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .u-ttlBox1 {
         margin-bottom: 9.3333333333vw; }
         .u-ttlBox1 .ttl img {
@@ -611,13 +611,13 @@ section + section {
     margin-bottom: 21px;
     padding: 18px 16px;
     border-radius: 3px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .u-ttlBox2 {
         margin-bottom: 5.3333333333vw;
         border-radius: 0; } }
     .u-ttlBox2.color1 {
       background-color: #3B3561; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .u-ttlBox2.is_mdlCourse img {
         width: 85.3333333333vw; } }
   .u-txRed {
@@ -636,7 +636,7 @@ section + section {
     .u-btn.sz1 {
       padding: 14px;
       border-radius: 3px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .u-btn.sz1 {
           padding: 3.7333333333vw; } }
     .u-btn.withArwR1 {
@@ -657,7 +657,7 @@ section + section {
         top: 0;
         bottom: 0;
         right: 13px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .u-btn.withArwR1 {
           padding-right: 8vw; }
           .u-btn.withArwR1:after {
@@ -690,12 +690,12 @@ section + section {
   .u-thumList1 {
     display: flex;
     justify-content: space-between; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .u-thumList1 {
         display: block; } }
     .u-thumList1 > a {
       display: block; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .u-thumList1 > a + a {
           margin-top: 3.2vw; } }
       .u-thumList1 > a .img {
@@ -707,23 +707,23 @@ section + section {
         transform: scale(1.1); }
     .u-thumList1.col2 > a {
       width: 51.7307692308%; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .u-thumList1.col2 > a {
           width: auto; } }
     .u-thumList1.col3 > a {
       width: 32.3076923077%; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .u-thumList1.col3 > a {
           width: auto; } }
   .u-thumTxtList1 {
     display: flex;
     justify-content: space-between; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .u-thumTxtList1 {
         display: block; } }
     .u-thumTxtList1 > a {
       display: block; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .u-thumTxtList1 > a + a {
           margin-top: 16vw; } }
       .u-thumTxtList1 > a .img {
@@ -732,7 +732,7 @@ section + section {
         .u-thumTxtList1 > a .img img {
           width: 100%;
           transition: transform 0.3s; }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           .u-thumTxtList1 > a .img {
             margin-bottom: 6.6666666667vw; } }
       .u-thumTxtList1 > a .ttl {
@@ -740,25 +740,34 @@ section + section {
         color: #333;
         font-size: 2.8rem;
         font-weight: bold; }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           .u-thumTxtList1 > a .ttl {
             margin-bottom: 2.6666666667vw; } }
       .u-thumTxtList1 > a .infos {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 15px; }
-        @media screen and (max-width: 768px) {
+        flex-wrap: wrap;
+        margin-bottom: 10px; }
+        @media screen and (max-width: 767px) {
           .u-thumTxtList1 > a .infos {
-            margin-bottom: 4vw; } }
+            margin-bottom: 2.6666666667vw; } }
         .u-thumTxtList1 > a .infos .day {
+          margin-bottom: 5px;
           color: #4F4F4F;
           font-size: 2.4rem;
           line-height: 1.1666666667; }
+          @media screen and (max-width: 767px) {
+            .u-thumTxtList1 > a .infos .day {
+              margin-bottom: 1.3333333333vw; } }
         .u-thumTxtList1 > a .infos .lbls {
-          display: flex; }
+          display: flex;
+          margin-bottom: 5px; }
+          @media screen and (max-width: 767px) {
+            .u-thumTxtList1 > a .infos .lbls {
+              margin-bottom: 1.3333333333vw; } }
           .u-thumTxtList1 > a .infos .lbls .u-lbl + .u-lbl {
             margin-left: 11.12px; }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 767px) {
               .u-thumTxtList1 > a .infos .lbls .u-lbl + .u-lbl {
                 margin-left: 2.6666666667vw; } }
       .u-thumTxtList1 > a p {
@@ -777,12 +786,12 @@ section + section {
         opacity: 0.7; }
     .u-thumTxtList1.col2 > a {
       width: 49.1324200913%; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .u-thumTxtList1.col2 > a {
           width: auto; } }
     .u-thumTxtList1.col3 > a {
       width: 32.0547945205%; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .u-thumTxtList1.col3 > a {
           width: auto; } }
   .u-mainBox1 {
@@ -801,17 +810,17 @@ section + section {
     .u-mainBox1 .in {
       padding-left: 12px;
       padding-right: 12px; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .u-mainBox1 .in {
           padding-left: 3.2vw;
           padding-right: 3.2vw; } }
     .u-mainBox1.type1 .boxCont {
       justify-content: center;
       align-items: center; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .u-mainBox1.type1 .boxCont {
           display: block; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .u-mainBox1.type1 .in {
         padding-top: 11.4666666667vw; } }
     .u-mainBox1.type1 .in strong {
@@ -819,31 +828,31 @@ section + section {
     .u-mainBox1.type1 .in .ttl p {
       margin-top: 10px;
       font-size: 1.4rem; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .u-mainBox1.type1 .in .ttl p {
           margin-top: 2.6666666667vw; } }
     .u-mainBox1.type1 .in .u-btnWrap {
       margin-top: 23px;
       text-align: center; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .u-mainBox1.type1 .in .u-btnWrap {
           margin-top: 5.3333333333vw;
           text-align: left; } }
   .u-.dis_flex_block {
     display: flex; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .u-.dis_flex_block {
         display: block; } }
 
 /* その他 */
 .mainSld {
   padding-bottom: 80px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .mainSld {
       padding-bottom: 14.6666666667vw; } }
   .mainSld .slick-dots {
     bottom: 22px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .mainSld .slick-dots {
         bottom: 5.8666666667vw; } }
   .mainSld .liItem a {
@@ -854,25 +863,25 @@ section + section {
 .phtGalleryZone {
   background: url(../img/bg_dot_lblue.png) 0 0 repeat;
   padding-bottom: 70px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .phtGalleryZone {
       padding-bottom: 8.5333333333vw; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .phtGalleryZone .u-mainBox1 .in {
       padding-left: 9.0666666667vw; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .phtGalleryZone .u-mainBox1 .in strong img {
       width: 72.5333333333vw; } }
   .phtGalleryZone .cont .in {
     padding-left: 55px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .phtGalleryZone .cont .in {
         padding-left: 0; } }
   .phtGalleryZone .cont .infoBox {
     background-color: #fff;
     padding: 20px 22px;
     border: 1px solid #009FB7; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .phtGalleryZone .cont .infoBox {
         margin-left: 3.2vw;
         margin-right: 3.2vw;
@@ -881,12 +890,12 @@ section + section {
       margin-bottom: 20px;
       color: #686868;
       font-size: 2.2rem; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .phtGalleryZone .cont .infoBox .ttl {
           margin: 0 0 5.3333333333vw 7.2vw; } }
     .phtGalleryZone .cont .infoBox .list {
       border: 1px solid #009FB7; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .phtGalleryZone .cont .infoBox .list {
           padding-left: 4vw;
           padding-right: 4vw; } }
@@ -894,7 +903,7 @@ section + section {
         border-top: 1px dotted #009FB7; }
       .phtGalleryZone .cont .infoBox .list > li dl {
         padding: 15px; }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           .phtGalleryZone .cont .infoBox .list > li dl {
             padding: 4vw 2.6666666667vw; } }
       .phtGalleryZone .cont .infoBox .list > li dt {
@@ -902,20 +911,20 @@ section + section {
         .phtGalleryZone .cont .infoBox .list > li dt strong {
           color: #333;
           font-weight: bold; }
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 767px) {
             .phtGalleryZone .cont .infoBox .list > li dt strong {
               display: block; } }
         .phtGalleryZone .cont .infoBox .list > li dt small {
           display: inline-block;
           color: #686868; }
-          @media screen and (max-width: 768px) {
+          @media screen and (max-width: 767px) {
             .phtGalleryZone .cont .infoBox .list > li dt small {
               display: block; } }
       .phtGalleryZone .cont .infoBox .list > li dd {
         margin-top: 5px;
         color: #828282;
         font-size: 1.1rem; }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           .phtGalleryZone .cont .infoBox .list > li dd {
             margin-top: 1.3333333333vw; } }
 
@@ -941,7 +950,7 @@ section + section {
   .slick-arrow:hover {
     opacity: 0.7;
     text-decoration: none; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .slick-arrow {
       width: 4.9386666667vw;
       height: 8vw; } }
@@ -950,13 +959,13 @@ section + section {
   .slick-arrow.slick-prev {
     background-image: url(../img/slk_arw1_l.png);
     left: 20px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .slick-arrow.slick-prev {
         left: 1.3333333333vw; } }
   .slick-arrow.slick-next {
     background-image: url(../img/slk_arw1_r.png);
     right: 20px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .slick-arrow.slick-next {
         right: 1.3333333333vw; } }
 
@@ -970,7 +979,7 @@ section + section {
   .slick-dots li.slick-active {
     background-color: #3B3561;
     border: 2px solid #fff; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .slick-dots li {
       width: 4vw;
       height: 4vw;
@@ -991,7 +1000,7 @@ section + section {
     margin-left: -300px;
     top: 20%;
     text-align: center; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       .modalBox .modalInner {
         width: 90%; } }
     .modalBox .modalInner p {

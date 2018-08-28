@@ -53,8 +53,13 @@
 				@include mq{
 					width: auto;
 					margin-bottom: vw(18);
-					padding: 0 0 0 vw(30);
+					padding: 0 0 0 vw(19);
 					font-size: 1.1rem;
+					&:before{
+						width: 0.5em;
+						height: 0.5em;
+						border-width: 0 vw(2) vw(2) 0;
+					}
 				}
 			}
 		}
@@ -79,6 +84,9 @@
 			margin-top: -10px;
 			font-size: 1.8rem;
 			text-align: right;
+			@include mq(l){
+				font-size: 1.4rem;
+			}
 			@include mq{
 				margin-top: vw(27);
 				font-size: 0.9rem;

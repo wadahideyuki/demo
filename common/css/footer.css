@@ -51,8 +51,12 @@
         .footer .ftNavs nav a {
           width: auto;
           margin-bottom: 4.8vw;
-          padding: 0 0 0 8vw;
-          font-size: 1.1rem; } }
+          padding: 0 0 0 5.0666666667vw;
+          font-size: 1.1rem; }
+          .footer .ftNavs nav a:before {
+            width: 0.5em;
+            height: 0.5em;
+            border-width: 0 0.5333333333vw 0.5333333333vw 0; } }
 .footer .ftInfo {
   background-color: #3B3561;
   margin-top: 0;
@@ -72,6 +76,9 @@
     margin-top: -10px;
     font-size: 1.8rem;
     text-align: right; }
+    @media screen and (max-width: 1024px) {
+      .footer .ftInfo .copyright {
+        font-size: 1.4rem; } }
     @media screen and (max-width: 767px) {
       .footer .ftInfo .copyright {
         margin-top: 7.2vw;

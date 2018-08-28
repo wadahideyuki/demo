@@ -78,6 +78,10 @@ section{
 				padding-left: 0;
 				padding-right: 0;
 			}
+			&.spType3{
+				padding-left: vw(24);
+				padding-right: vw(24);
+			}
 		}
 	}
 
@@ -128,9 +132,48 @@ section{
 	}
 
 
-
 	/* テキスト */
 	&lead1{
+		margin-bottom: 70px;
+		color: #2E2E2E;
+		font-size: 2.0rem;
+		text-align: center;
+		line-height: (36/20);
+		@include mq{
+			margin: 0 vw(10) vw(28);
+			font-size: 1.5rem;
+			text-align: left;
+		}
+		&.color1{color: #828282;}
+	}
+	&lead2{
+		margin-bottom: 60px;
+		color: #2E2E2E;
+		font-family: 游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+		font-size: 2.8rem;
+		font-weight: bold;
+		text-align: center;
+		span{
+			display: inline-block;
+		}
+		@include mq{
+			margin-bottom: vw(28);
+			font-size: 1.8rem;
+			text-align: left;
+			span{
+				display: inline;
+			}
+		}
+	}
+	&lead3{
+		margin-bottom: 70px;
+		color: #828282;
+		font-size: 2.2rem;
+		line-height: (39/22);
+		@include mq{
+			margin: 0 vw(15) vw(43);
+			font-size: 1.5rem;
+		}
 	}
 
 
@@ -154,11 +197,20 @@ section{
 			align-items: center;
 		}
 		&.color1{background-color: $purple1;}
+		&.color2{background-color: $pink1;}
 		&.sz1{
 			padding: 14px;
 			border-radius: 3px;
 			@include mq{
 				padding: vw(14);
+			}
+		}
+		&.sz2{
+			padding: 24px 97px;
+			border-radius: 6px;
+			@include mq{
+				display: block;
+				padding: vw(24);
 			}
 		}
 		&.withArwR1{//矢印付き
@@ -172,7 +224,7 @@ section{
 				margin: auto;
 				border-style: solid;
 				border-width: 2px 2px 0 0;
-				border-color: #fff inherit transparent transparent;
+				border-color: #fff #fff transparent transparent;
 				box-sizing: border-box;
 				transform: rotate(45deg);
 				position: absolute;
@@ -185,7 +237,38 @@ section{
 				&:after{
 					width: vw(12);
 					height: vw(12);
+					border-width: vw(2) vw(2) 0 0;
 					right: vw(13);
+				}
+			}
+		}
+		&.withArwImgR1{//画像の矢印付き
+			padding-right: 128px;
+			position: relative;
+			.arw{
+				display: inline-block;
+				width: 17px;
+				margin: auto;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 77px;
+			}
+			@include mq{
+				padding-right: vw(85);
+				.arw{
+					width: vw(18.22);
+					height: vw(29.5);
+					right: vw(52.67);
+				}
+			}
+		}
+		&.is_toInq{
+			@include mq{
+				padding-left: vw(67);
+				padding-right: vw(85);
+				img{
+					width: 100%;
 				}
 			}
 		}
@@ -222,6 +305,50 @@ section{
 
 
 	/* リスト */
+	&txtList1{//テキスト
+		> ul{
+			border-top: 1px dotted #828282;
+			> li{
+				border-bottom: 1px dotted #828282;
+				dl{
+					padding: 40px 0;
+					@include mq{
+						padding: vw(30) 0;
+					}
+				}
+				dt{
+					color: #333;
+					font-size: 2.8rem;
+					strong{
+						display: block;
+						font-weight: bold;
+					}
+					small{
+						display: block;
+						color: #4F4F4F;
+						font-size: em(24/28);
+					}
+					@include mq{
+						font-size: 2.0rem;
+						small{
+							margin-top: vw(15);
+							font-size: em(16/20);
+						}
+					}
+				}
+				dd{
+					margin-top: 20px;
+					color: #828282;
+					font-size: 2.0rem;
+					@include mq{
+						margin-top: vw(16);
+						font-size: 1.6rem;
+						line-height: (30/20);
+					}
+				}
+			}
+		}
+	}
 	&thumList1{//画像
 		display: flex;
 		justify-content: space-between;
@@ -266,6 +393,7 @@ section{
 	&thumTxtList1{//画像とテキスト
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		@include mq{
 			display: block;
 		}
@@ -360,12 +488,65 @@ section{
 				@include mq{width: auto;}
 			}
 		}
+		&.is_unlimit{
+			> a{
+				margin-bottom: 100px;
+				@include mq{
+					margin-bottom: 0;
+					&:last-child{
+					}
+				}
+			}
+		}
 	}
 
 
-
 	/* テーブル */
-	&tblBox1{
+	&tbl1{
+		table{
+			width: 100%;
+			color: #828282;
+			border-bottom: 1px dotted #828282;
+			tr{
+				height: 194px;
+				border-top: 1px dotted #828282;
+				@include mq{
+					height: vw(194);
+				}
+			}
+			th{
+				width: 192px;
+				padding-left: 41px;
+				font-size: 2.8rem;
+				box-sizing: border-box;
+				@include mq{
+					width: vw(104);
+					padding-left: vw(16);
+					font-size: 1.8rem;
+				}
+			}
+			td{
+				padding: 30px 10px 30px 0;
+				font-size: 2.2rem;
+				@include mq{
+					font-size: 1.6rem;
+				}
+				p{
+					+ p{
+						margin-top: 15px;
+						@include mq{
+							margin-top: vw(15);
+						}
+					}
+				}
+			}
+		}
+		+ .u-btnWrap{
+			margin-top: 309px;
+			@include mq{
+				margin-top: vw(84);
+			}
+		}
 	}
 
 
@@ -375,6 +556,12 @@ section{
 
 
 	/* 箱 */
+	&pageTopMainBoxWrap{
+		padding-bottom: 67px;
+		@include mq{
+			padding-bottom: vw(26);
+		}
+	}
 	&mainBox1{
 		color: #fff;
 		position: relative;
@@ -398,7 +585,7 @@ section{
 				padding-right: vw(12);
 			}
 		}
-		&.type1{//上下中央
+		&.type1{//PC上下左右中央,SP左上
 			.boxCont{
 				justify-content: center;
 				align-items: center;
@@ -432,6 +619,78 @@ section{
 				}
 			}
 		}
+		&.type2{//上下中央左
+			.boxCont{
+				align-items: center;
+				@include mq{
+				}
+				.u-inner{
+					width: 100%;
+					box-sizing: border-box;
+					@include mq{
+						padding-left: vw(29);
+					}
+				}
+			}
+		}
+		&.type3{//PC右下,SP上下中央
+			.boxCont{
+				justify-content: flex-end;
+				align-items: flex-end;
+				@include mq{
+					justify-content: center;
+					align-items: center;
+				}
+				.in{
+					max-width: 50%;
+					padding: 0 70px 34px 0;
+					@include mq(l){
+						padding: 0 percentage(70/1024) percentage(34/1024) 0;
+					}
+					@include mq{
+						padding: 0;
+					}
+				}
+			}
+		}
+		&.is_evList{
+			@include mq{
+				.boxCont{
+					.ttl{
+						img{
+							width: vw(198);
+						}
+					}
+				}
+			}
+		}
+		&.is_evDtl{
+			.boxCont{
+			}
+			@include mq{
+				.boxCont{
+					.in{
+						max-width: none;
+					}
+					.ttl{
+						img{
+							width: vw(326);
+						}
+					}
+				}
+			}
+		}
+		&.is_Info{
+			@include mq{
+				.boxCont{
+					.ttl{
+						img{
+							width: vw(198);
+						}
+					}
+				}
+			}
+		}
 	}
 
 	&.accBox{//アコーディオン
@@ -439,6 +698,73 @@ section{
 	&.accBtn{
 	}
 	&.accCont{
+	}
+
+
+	/* ページャー */
+	&pager1{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 100px;
+		font-size: 2.4rem;
+		font-weight: bold;
+		text-align: center;
+		line-height: 1;
+		@include mq{
+			margin-top: vw(70);
+		}
+		> *{
+			color: #BDBDBD;
+		}
+		a{
+			text-decoration: underline;
+		}
+		.num{
+			background-color: #BDBDBD;
+			width: em(36/24);
+			height: em(36/24);
+			color: #fff;
+			font-family: 'Roboto', sans-serif;
+			line-height: 1.25;
+			text-decoration: none;
+			border: 3px solid #BDBDBD;
+			box-sizing: border-box;
+			+ .num{
+				margin-left: em(16/24);
+			}
+			@include mq{
+				border-width: vw(3);
+			}
+		}
+		a{
+			&.num{
+				@include hvr;
+			}
+		}
+		span{
+			&.num{
+				background-color: #fff;
+				color: #BDBDBD;
+			}
+		}
+		a{
+			&.txt{
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+		.pre{
+			margin-right: em(30/24);
+			@include mq{
+			}
+		}
+		.nxt{
+			margin-left: em(30/24);
+			@include mq{
+			}
+		}
 	}
 
 
@@ -493,6 +819,13 @@ section{
 					img{
 						width: vw(272);
 					}
+				}
+			}
+		}
+		.u-btn{
+			img{
+				@include mq{
+					width: vw(144);
 				}
 			}
 		}
@@ -621,6 +954,9 @@ section{
 		width: (15/375) * 100vw;
 		height: (15/375) * 100vw;
 		margin: 0 (11/375) * 100vw;
+		&.slick-active{
+			border-width: vw(2);
+		}
 	}
 }
 

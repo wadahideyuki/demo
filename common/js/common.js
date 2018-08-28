@@ -40,11 +40,4 @@ $(".mainSld ul").slick({
 
 
 
-
-/*
-$(".cbYt1").colorbox({iframe:true, innerWidth:720, innerHeight:480});
-$(".cbPh1").colorbox({opacity: 0.5});	
-$(".cbIf1").colorbox({iframe:true, innerWidth:947, innerHeight:600});
-*/
-
 });//DocRdyFncEnd

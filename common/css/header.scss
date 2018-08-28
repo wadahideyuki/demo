@@ -25,6 +25,7 @@
 			max-width: percentage(280/1368);
 			@include mq{
 				width: 200px;
+				max-width: none;
 			}
 			a{
 				display: block;
@@ -39,6 +40,14 @@
 			width: percentage($hdMenusW/$hdInnerW);
 			@include mq{
 				display: none;
+				background-color: rgba(46,46,46,0.95);
+				width: 100%;
+				padding: 23px 25px 33px;
+				box-sizing: border-box;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 1;
 			}
 			.etc{
 				display: flex;
@@ -47,10 +56,19 @@
 				flex-shrink: 0;
 				width: 263px;
 				margin-left: 16px;
+				@include mq{
+					flex-direction: column-reverse;
+					width: auto;
+					margin-left: 0;
+					padding-bottom: vw(21);
+					border-bottom: 1px dotted #4F4F4F;
+				}
 				.searchBox{
 					line-height: 1;
 					form{
 						display: flex;
+						@include mq{
+						}
 						button{
 							display: flex;
 							justify-content: center;
@@ -71,16 +89,34 @@
 								display: block;
 								white-space: nowrap;
 							}
+							@include mq{
+								width: vw(63);
+								height: vw(26);
+								font-size: vw(12);
+								i{
+									width: vw(12);
+									margin-right: vw(6);
+								}
+								span{
+								}
+							}
 						}
 						.txt{
 							display: block;
 							margin-left: 7px;
 							input{
+								background-color: #fff;
 								width: 100%;
 								height: 100%;
 								padding: 0 8px;
 								border: 1px solid #BDBDBD;
 								box-sizing: border-box;
+							}
+							@include mq{
+								width: vw(192);
+								padding-left: vw(11);
+								input{
+								}
 							}
 						}
 					}
@@ -89,6 +125,10 @@
 					display: flex;
 					justify-content: space-between;
 					line-height: 1;
+					@include mq{
+						flex-direction: column-reverse;
+						padding-bottom: vw(21);
+					}
 					> *{
 						width: 48%;
 					}
@@ -102,21 +142,37 @@
 						align-items: center;
 						background-color: $purple1;
 						color: #fff;
-						font-size: 12.5px;
+						font-size: 1.25rem;
+						@include mq{
+							width: vw(124);
+							padding: vw(6) 0;
+							border: vw(1) solid #fff;
+						}
 						i{
 							display: block;
 							width: 16.5px;
 							margin-right: 10.5px;
+							@include mq{
+								width: vw(16.5);
+							}
 						}
 					}
 					.lng{
 						background-color: #fff;
 						color: #DD7373;
 						font-size: 14px;
+						@include mq{
+							background-color: transparent;
+							width: auto;
+							padding-bottom: vw(19);
+						}
 						.btn{
 							padding: 6px 16px 6px 37px;
 							border: 1px solid #DD7373;
 							position: relative;
+							@include mq{
+								display: none;
+							}
 							i{
 								display: block;
 								width: 10px;
@@ -129,42 +185,82 @@
 								&:before{
 									content: "";
 									display: block;
-									width: 70%;
-									height: 70%;
+									width: 68%;
+									height: 68%;
 									border-bottom: 2px solid #DD7373;
 									border-left: 2px solid #DD7373;
-//									position: absolute;
-//									top: 5px;
-									transform: translateY(-2px) rotate(-45deg);
+									transform: translate(20%, -20%) rotate(-45deg);
 								}
-								&:before{
-								}
-								&:after{
-//									top: 5px;
-//									transform: rotate(45deg);
+							}
+							&.show{
+								i{
+									&:before,
+									&:after{
+										width: percentage(1.41421356237);
+										height: percentage(1.41421356237);
+										border-bottom: 2px solid #DD7373;
+										position: absolute;
+										top: 0;
+									}
+									&:before{
+										border-left: none;
+										left: 0;
+										transform: translate(-50%, -50%) rotate(-45deg);
+									}
+									&:after{
+										content: "";
+										display: block;
+										right: 0;
+										transform: translate(50%, -50%) rotate(45deg);
+									}
 								}
 							}
 						}
 						.lngs{
 							position: relative;
 							z-index: 1;
+							@include mq{
+								padding: 0 vw(70) vw(18) 0;
+								border-bottom: 1px dotted #4F4F4F;
+							}
 							span{
 								display: none;
 								background-color: #fff;
 								width: 100%;
 								padding: 19px 0 16px;
-								font-size: 12.5px;
+								font-size: 1.25rem;
 								border: 1px solid #DD7373;
 								border-top: none;
 								box-sizing: border-box;
 								position: absolute;
 								top: 0;
 								left: 0;
+								@include mq{
+									display: block;
+									background-color: transparent;
+									padding: 0;
+									border: none;
+									position: static;
+								}
 							}
 							a{
 								padding-left: 37px;
 								+ a{
 									margin-top: 12px;
+								}
+								@include mq{
+									display: inline-block;
+									background-color: #fff;
+									width: vw(59);
+									height: vw(26);
+									margin-bottom: vw(8);
+									padding: 0;
+									text-align: center;
+									line-height: (26/12.5);
+									border: vw(1.5) solid #DD7373;
+									+ a{
+										margin-top: 0;
+									}
 								}
 							}
 						}
@@ -176,10 +272,18 @@
 				justify-content: space-between;
 				width: 100%;
 				text-align: center;
+				@include mq{
+					display: block;
+				}
 				.hdNav{
 					display: flex;
 					width: 100%;
 					text-align: center;
+					@include mq{
+						display: block;
+						padding: vw(30) 0;
+						border-bottom: 1px dotted #4F4F4F;
+					}
 					a{
 						width: 20%;
 						padding: 0 5px;
@@ -193,19 +297,40 @@
 							margin: 0 auto 14px;
 						}
 						p{
-							font-size: 17px;
+							font-size: 1.7rem;
+						}
+						@include mq{
+							display: flex;
+							width: auto;
+							padding: 0;
+							color: #fff;
+							text-align: left;
+							border-left: none;
+							+ a{
+								margin-top: vw(21);
+							}
+							i{
+								width: vw(33);
+								margin: 0 vw(21) 0 0;
+							}
+							p{
+							}
 						}
 					}
 				}
 				.hdBtnYoyaku{
 					flex-shrink: 0;
-					background-color: $orange1;
 					width: percentage(153/744);
 					color: #fff;
+					@include mq{
+						width: auto;
+						margin-top: vw(21);
+					}
 					> a{
 						display: flex;
 						justify-content: center;
 						align-items: center;
+						background-color: $orange1;
 						height: 100%;
 						padding: 0 10px;
 						@include hvr;
@@ -215,14 +340,24 @@
 						}
 						p{
 							margin-left: 8px;
-							font-size: 15.5px;
+							font-size: 1.55rem;
+						}
+						@include mq{
+							padding: vw(18);
+							i{
+								width: vw(42);
+							}
+							p{
+								margin-left: vw(8);
+								font-size: 1.6rem;
+							}
 						}
 					}
 				}
 			}
 
 		}
-		.btnSpMenuCls{
+		.btnSpMenu{
 			display: none;
 			@include mq{
 				display: block;
@@ -230,16 +365,21 @@
 				position: absolute;
 				top: 34px;
 				right: 25px;
+				z-index: 1;
 			}
-			.icnCls{
-				display: none;
-			}
-			.icnBar{
-			}
+			.icnCls{display: none;}
+			.icnBar{}
 			span{
 				display: block;
 				margin-top: 7.5px;
 				color: #3B3561;
+			}
+			&.show{
+				.icnCls{display: block;}
+				.icnBar{display: none;}
+				span{
+					color: #fff;
+				}
 			}
 		}
 	}

@@ -71,7 +71,7 @@
 		color: #fff;
 		line-height: 1;
 		@include mq{
-			padding: vw(40) vw(12) vw(10);
+			padding: vw(42) vw(12) vw(10);
 		}
 		.ftLogo{
 			width: 192px;
@@ -81,14 +81,15 @@
 			}
 		}
 		.copyright{
-			margin-top: -10px;
+			margin: -10px 20px 0 0;
 			font-size: 1.8rem;
 			text-align: right;
+			letter-spacing: 0;
 			@include mq(l){
 				font-size: 1.4rem;
 			}
 			@include mq{
-				margin-top: vw(27);
+				margin: vw(25) 0 0;
 				font-size: 0.9rem;
 				text-align: center;
 			}

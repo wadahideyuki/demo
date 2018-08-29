@@ -802,9 +802,10 @@ section{
 }
 
 .phtGalleryZone{//topのフォトギャラリー
-	background: url(../img/bg_dot_lblue.png) 0 0 repeat;
+	background: url(../img/bg_dot_lblue.png) center center repeat;
 	padding-bottom: 70px;
 	@include mq{
+		background-size: vw(23) vw(56);
 		padding-bottom: vw(32);
 	}
 	.u-mainBox1{

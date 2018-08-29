@@ -9,7 +9,7 @@
 .header{
 	padding: 65px 0 40px;
 	@include mq{
-		padding: 32px 0 22px;
+		padding: vw(32) 0 vw(21);
 	}
 	.u-inner{
 		$hdInnerW: 1368;
@@ -24,7 +24,7 @@
 			width: 280px;
 			max-width: percentage(280/1368);
 			@include mq{
-				width: 200px;
+				width: vw(200);
 				max-width: none;
 			}
 			a{
@@ -47,7 +47,7 @@
 				position: absolute;
 				top: 0;
 				left: 0;
-				z-index: 1;
+				z-index: 2;
 			}
 			.etc{
 				display: flex;
@@ -80,6 +80,7 @@
 							padding-top: 3px;
 							color: #fff;
 							font-size: 12px;
+							@include hvr;
 							i{
 								display: block;
 								width: 12px;
@@ -301,6 +302,7 @@
 						}
 						@include mq{
 							display: flex;
+							align-items: center;
 							width: auto;
 							padding: 0;
 							color: #fff;
@@ -361,18 +363,22 @@
 			display: none;
 			@include mq{
 				display: block;
-				width: 31px;
+				width: vw(29);
 				position: absolute;
-				top: 34px;
-				right: 25px;
-				z-index: 1;
+				top: vw(34);
+				right: vw(27);
+				z-index: 2;
 			}
 			.icnCls{display: none;}
 			.icnBar{}
 			span{
 				display: block;
-				margin-top: 7.5px;
+				margin-top: 5.5px;
 				color: #3B3561;
+				@include mq{
+					font-size: vw(10);
+					letter-spacing: 0.04em;
+				}
 			}
 			&.show{
 				.icnCls{display: block;}

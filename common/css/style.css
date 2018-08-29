@@ -1098,10 +1098,11 @@ section + section {
       width: 100%; }
 
 .phtGalleryZone {
-  background: url(../img/bg_dot_lblue.png) 0 0 repeat;
+  background: url(../img/bg_dot_lblue.png) center center repeat;
   padding-bottom: 70px; }
   @media screen and (max-width: 767px) {
     .phtGalleryZone {
+      background-size: 6.1333333333vw 14.9333333333vw;
       padding-bottom: 8.5333333333vw; } }
   @media screen and (max-width: 767px) {
     .phtGalleryZone .u-mainBox1 .in {

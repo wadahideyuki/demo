@@ -65,7 +65,7 @@
   line-height: 1; }
   @media screen and (max-width: 767px) {
     .footer .ftInfo {
-      padding: 10.6666666667vw 3.2vw 2.6666666667vw; } }
+      padding: 11.2vw 3.2vw 2.6666666667vw; } }
   .footer .ftInfo .ftLogo {
     width: 192px;
     margin: auto; }
@@ -73,14 +73,15 @@
       .footer .ftInfo .ftLogo {
         width: 51.2vw; } }
   .footer .ftInfo .copyright {
-    margin-top: -10px;
+    margin: -10px 20px 0 0;
     font-size: 1.8rem;
-    text-align: right; }
+    text-align: right;
+    letter-spacing: 0; }
     @media screen and (max-width: 1024px) {
       .footer .ftInfo .copyright {
         font-size: 1.4rem; } }
     @media screen and (max-width: 767px) {
       .footer .ftInfo .copyright {
-        margin-top: 7.2vw;
+        margin: 6.6666666667vw 0 0;
         font-size: 0.9rem;
         text-align: center; } }

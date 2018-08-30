@@ -39,3 +39,9 @@
 		@content;
 	}
 }
+
+@mixin mqMinMaxW($bpMin: 768px, $bpMax: 1392px) {
+	@media screen and (min-width: $bpMin) and (max-width: $bpMax) {
+		@content;
+	}
+}

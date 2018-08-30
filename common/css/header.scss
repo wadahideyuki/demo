@@ -56,6 +56,10 @@
 				flex-shrink: 0;
 				width: 263px;
 				margin-left: 16px;
+				@include mqMinMaxW{
+					width: 263/1392 * $vw;
+					margin-left: 10/1392 * $vw;
+				}
 				@include mq{
 					flex-direction: column-reverse;
 					width: auto;
@@ -76,7 +80,7 @@
 							width: 63px;
 							height: 26px;
 							color: #fff;
-							font-size: 12px;
+							font-size: 1.2rem;
 							position: relative;
 							cursor: pointer;
 							line-height: 1;
@@ -95,10 +99,23 @@
 								top: 7px;
 								left: 26px;
 							}
+							@include mqMinMaxW{
+								width: 63/1392 * $vw;
+								height: 26/1392 * $vw;
+								font-size: 12/1392 * $vw;
+								i{
+									width: 12/1392 * $vw;
+									top: 6/1392 * $vw;
+									left: 8/1392 * $vw;
+								}
+								span{
+									top: 7/1392 * $vw;
+									left: 26/1392 * $vw;
+								}
+							}
 							@include mq{
 								width: vw(63);
 								height: vw(26);
-								font-size: vw(12);
 								i{
 									width: vw(12);
 									top: vw(6);
@@ -123,6 +140,9 @@
 								border: 1px solid #BDBDBD;
 								border-radius: 0;
 								box-sizing: border-box;
+							}
+							@include mqMinMaxW{
+								height: 26/1392 * $vw;
 							}
 							@include mq{
 								width: vw(192);
@@ -157,6 +177,9 @@
 						background-color: $purple1;
 						color: #fff;
 						font-size: 1.25rem;
+						@include mqMinMaxW{
+							font-size: 12.5/1392 * $vw;
+						}
 						@include mq{
 							width: vw(124);
 							padding: vw(6) 0;
@@ -166,6 +189,9 @@
 							display: block;
 							width: 16.5px;
 							margin-right: 10.5px;
+							@include mqMinMaxW{
+								width: 16/1392 * $vw;
+							}
 							@include mq{
 								width: vw(16.5);
 							}
@@ -174,7 +200,10 @@
 					.lng{
 						background-color: #fff;
 						color: #DD7373;
-						font-size: 14px;
+						font-size: 1.4rem;
+						@include mqMinMaxW{
+							font-size: 14/1392 * $vw;
+						}
 						@include mq{
 							background-color: transparent;
 							width: auto;
@@ -184,6 +213,9 @@
 							padding: 6px 16px 6px 37px;
 							border: 1px solid #DD7373;
 							position: relative;
+							@include mqMinMaxW{
+								padding-left: 37/1392 * $vw;
+							}
 							@include mq{
 								display: none;
 							}
@@ -204,6 +236,9 @@
 									border-bottom: 2px solid #DD7373;
 									border-left: 2px solid #DD7373;
 									transform: translate(20%, -20%) rotate(-45deg);
+								}
+								@include mqMinMaxW{
+									left: 13/1392 * $vw;
 								}
 							}
 							&.show{
@@ -248,6 +283,11 @@
 								position: absolute;
 								top: -1px;
 								left: 0;
+								@include mqMinMaxW{
+									padding-top: 19/1392 * $vw;
+									padding-bottom: 16/1392 * $vw;
+									font-size: 12.5/1392 * $vw;
+								}
 								@include mq{
 									display: block;
 									background-color: transparent;
@@ -259,7 +299,7 @@
 							a{
 								padding-left: 37px;
 								+ a{
-									margin-top: 12px;
+									margin-top: em(12/12.5);
 								}
 								@include mq{
 									display: inline-block;
@@ -312,6 +352,11 @@
 						p{
 							font-size: 1.7rem;
 						}
+						@include mqMinMaxW{
+							p{
+								font-size: 15/1392 * $vw;
+							}
+						}
 						@include mq{
 							display: flex;
 							align-items: center;
@@ -355,6 +400,12 @@
 						p{
 							margin-left: 8px;
 							font-size: 1.55rem;
+						}
+						@include mqMinMaxW{
+							p{
+								font-size: 16/1392 * $vw;
+								br{display: none;}
+							}
 						}
 						@include mq{
 							padding: vw(18);

@@ -51,6 +51,10 @@
         flex-shrink: 0;
         width: 263px;
         margin-left: 16px; }
+        @media screen and (min-width: 768px) and (max-width: 1392px) {
+          .header .u-inner .hdMenus .etc {
+            width: 18.8936781609vw;
+            margin-left: 0.7183908046vw; } }
         @media screen and (max-width: 767px) {
           .header .u-inner .hdMenus .etc {
             flex-direction: column-reverse;
@@ -69,7 +73,7 @@
               width: 63px;
               height: 26px;
               color: #fff;
-              font-size: 12px;
+              font-size: 1.2rem;
               position: relative;
               cursor: pointer;
               line-height: 1;
@@ -89,11 +93,22 @@
                 position: absolute;
                 top: 7px;
                 left: 26px; }
+              @media screen and (min-width: 768px) and (max-width: 1392px) {
+                .header .u-inner .hdMenus .etc .searchBox form button {
+                  width: 4.525862069vw;
+                  height: 1.867816092vw;
+                  font-size: 0.8620689655vw; }
+                  .header .u-inner .hdMenus .etc .searchBox form button i {
+                    width: 0.8620689655vw;
+                    top: 0.4310344828vw;
+                    left: 0.5747126437vw; }
+                  .header .u-inner .hdMenus .etc .searchBox form button span {
+                    top: 0.5028735632vw;
+                    left: 1.867816092vw; } }
               @media screen and (max-width: 767px) {
                 .header .u-inner .hdMenus .etc .searchBox form button {
                   width: 16.8vw;
-                  height: 6.9333333333vw;
-                  font-size: 3.2vw; }
+                  height: 6.9333333333vw; }
                   .header .u-inner .hdMenus .etc .searchBox form button i {
                     width: 3.2vw;
                     top: 1.6vw;
@@ -114,6 +129,9 @@
                 border: 1px solid #BDBDBD;
                 border-radius: 0;
                 box-sizing: border-box; }
+              @media screen and (min-width: 768px) and (max-width: 1392px) {
+                .header .u-inner .hdMenus .etc .searchBox form .txt {
+                  height: 1.867816092vw; } }
               @media screen and (max-width: 767px) {
                 .header .u-inner .hdMenus .etc .searchBox form .txt {
                   width: 51.2vw;
@@ -144,6 +162,9 @@
             background-color: #3B3561;
             color: #fff;
             font-size: 1.25rem; }
+            @media screen and (min-width: 768px) and (max-width: 1392px) {
+              .header .u-inner .hdMenus .etc .btns .inq {
+                font-size: 0.8979885057vw; } }
             @media screen and (max-width: 767px) {
               .header .u-inner .hdMenus .etc .btns .inq {
                 width: 33.0666666667vw;
@@ -153,13 +174,19 @@
               display: block;
               width: 16.5px;
               margin-right: 10.5px; }
+              @media screen and (min-width: 768px) and (max-width: 1392px) {
+                .header .u-inner .hdMenus .etc .btns .inq i {
+                  width: 1.1494252874vw; } }
               @media screen and (max-width: 767px) {
                 .header .u-inner .hdMenus .etc .btns .inq i {
                   width: 4.4vw; } }
           .header .u-inner .hdMenus .etc .btns .lng {
             background-color: #fff;
             color: #DD7373;
-            font-size: 14px; }
+            font-size: 1.4rem; }
+            @media screen and (min-width: 768px) and (max-width: 1392px) {
+              .header .u-inner .hdMenus .etc .btns .lng {
+                font-size: 1.0057471264vw; } }
             @media screen and (max-width: 767px) {
               .header .u-inner .hdMenus .etc .btns .lng {
                 background-color: transparent;
@@ -169,6 +196,9 @@
               padding: 6px 16px 6px 37px;
               border: 1px solid #DD7373;
               position: relative; }
+              @media screen and (min-width: 768px) and (max-width: 1392px) {
+                .header .u-inner .hdMenus .etc .btns .lng .btn {
+                  padding-left: 2.658045977vw; } }
               @media screen and (max-width: 767px) {
                 .header .u-inner .hdMenus .etc .btns .lng .btn {
                   display: none; } }
@@ -189,6 +219,9 @@
                   border-bottom: 2px solid #DD7373;
                   border-left: 2px solid #DD7373;
                   transform: translate(20%, -20%) rotate(-45deg); }
+                @media screen and (min-width: 768px) and (max-width: 1392px) {
+                  .header .u-inner .hdMenus .etc .btns .lng .btn i {
+                    left: 0.933908046vw; } }
               .header .u-inner .hdMenus .etc .btns .lng .btn.show i:before, .header .u-inner .hdMenus .etc .btns .lng .btn.show i:after {
                 width: 141.421356237%;
                 height: 141.421356237%;
@@ -222,6 +255,11 @@
                 position: absolute;
                 top: -1px;
                 left: 0; }
+                @media screen and (min-width: 768px) and (max-width: 1392px) {
+                  .header .u-inner .hdMenus .etc .btns .lng .lngs span {
+                    padding-top: 1.3649425287vw;
+                    padding-bottom: 1.1494252874vw;
+                    font-size: 0.8979885057vw; } }
                 @media screen and (max-width: 767px) {
                   .header .u-inner .hdMenus .etc .btns .lng .lngs span {
                     display: block;
@@ -232,7 +270,7 @@
               .header .u-inner .hdMenus .etc .btns .lng .lngs a {
                 padding-left: 37px; }
                 .header .u-inner .hdMenus .etc .btns .lng .lngs a + a {
-                  margin-top: 12px; }
+                  margin-top: 0.96em; }
                 @media screen and (max-width: 767px) {
                   .header .u-inner .hdMenus .etc .btns .lng .lngs a {
                     display: inline-block;
@@ -279,6 +317,9 @@
               margin: 0 auto 14px; }
             .header .u-inner .hdMenus .nav_btn .hdNav a p {
               font-size: 1.7rem; }
+            @media screen and (min-width: 768px) and (max-width: 1392px) {
+              .header .u-inner .hdMenus .nav_btn .hdNav a p {
+                font-size: 1.0775862069vw; } }
             @media screen and (max-width: 767px) {
               .header .u-inner .hdMenus .nav_btn .hdNav a {
                 display: flex;
@@ -318,6 +359,11 @@
             .header .u-inner .hdMenus .nav_btn .hdBtnYoyaku > a p {
               margin-left: 8px;
               font-size: 1.55rem; }
+            @media screen and (min-width: 768px) and (max-width: 1392px) {
+              .header .u-inner .hdMenus .nav_btn .hdBtnYoyaku > a p {
+                font-size: 1.1494252874vw; }
+                .header .u-inner .hdMenus .nav_btn .hdBtnYoyaku > a p br {
+                  display: none; } }
             @media screen and (max-width: 767px) {
               .header .u-inner .hdMenus .nav_btn .hdBtnYoyaku > a {
                 padding: 4.8vw; }

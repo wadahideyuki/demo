@@ -4,6 +4,10 @@
 ---------------------------------------*/
 .header {
   padding: 65px 0 40px; }
+  @media screen and (min-width: 768px) and (max-width: 1392px) {
+    .header {
+      padding-top: 4.6695402299vw;
+      padding-bottom: 2.8735632184vw; } }
   @media screen and (max-width: 767px) {
     .header {
       padding: 8.5333333333vw 0 5.6vw; } }

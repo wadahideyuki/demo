@@ -38,10 +38,12 @@
 		}
 		.hdMenus{
 			$hdMenusW: 1023;
-			display: flex;
 			justify-content: space-between;
 			flex-direction: row-reverse;
 			width: percentage($hdMenusW/$hdInnerW);
+			@include mq(pc){
+				display: flex !important;
+			}
 			@include mq{
 				display: none;
 				background-color: rgba(46,46,46,0.95);
@@ -293,7 +295,7 @@
 									font-size: 12.5/1392 * $vw;
 								}
 								@include mq{
-									display: block;
+									display: block !important;
 									background-color: transparent;
 									padding: 0;
 									border: none;
